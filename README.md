@@ -44,7 +44,7 @@ Cancer2| | |1 | |3
 
 ### Running MutationOrder
 
-After installing R and the required libraries, and building BMA you are ready to run the R scriots.
+After installing R and the required libraries, and building BMA you are ready to run the R scripts.
 
 Firstly, edit line 1 of ``order.R`` to point to your BMA executable:
 
