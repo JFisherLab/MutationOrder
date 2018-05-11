@@ -1,4 +1,4 @@
-bma.path <- "C:\\Users\\t-stwood\\Desktop\\BMApush\\BioModelAnalyzer\\src\\BioCheckConsole\\bin\\x64\\Release\\BioCheckConsole.exe"
+bma.path <- "C:\\MyPath\\BioModelAnalyzer\\src\\BioCheckConsole\\bin\\x64\\Release\\BioCheckConsole.exe"
 
 source("generation.R")
 source("analysis.R")
