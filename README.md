@@ -64,7 +64,7 @@ Adding the ``-async`` command line flag will run the model with asynchronous rat
 Rscript.exe order.R example_network.json example_mutations.csv -async
 ```
 
-After the script has finished executing, you will find a folder for each row in ``my-mutations.csv``, containing ``.csv`` files for the attractors of the model under every combination of mutations. You will also find ``.png`` and ``.pdf`` images for each row, showing these attractors (and the paths from background to fully mutated cell phenotypes) visually.
+After the script has finished executing, you will find a folder for each row in ``example_mutations.csv``, containing ``.csv`` files for the attractors of the model under every combination of mutations. You will also find ``.png`` and ``.pdf`` images for each row, showing these attractors (and the paths from background to fully mutated cell phenotypes) visually.
 
 ## License
 
