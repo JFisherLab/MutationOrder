@@ -27,11 +27,11 @@ You will also require the following R libraries:
  
 ### Network file
 
-Networks are represented in the `.json` format of BMA. These can be built and exported using the [BMA web interface](http://biomodelanalyzer.org/).
+Networks are represented in the `.json` format of BMA. These can be built and exported using the [BMA web interface](http://biomodelanalyzer.org/). An example is given in `example_network.json`.
  
 ### Mutation file format
 
-The general format is shown below, and a concrete example is given in `x.csv`.
+The general format is shown below, and a concrete example is given in `example_mutations.csv`.
 Columns correspond to mutated genes and rows to cancer genotypes.
 The file must contain a row labelled "Background", which gives the configuration of the "healthy" initial network. Other rows should not mutate the same genes as the background row.
 
@@ -55,13 +55,13 @@ bma.path <- "C:\\MyPath\\BioModelAnalyzer\\src\\BioCheckConsole\\bin\\x64\\Relea
 Now, assuming ``Rscript.exe`` is in your PATH, you can run MutationOrder:
 
 ```
-Rscript.exe order.R my-model.json my-mutations.csv
+Rscript.exe order.R example_network.json example_mutations.csv
 ```
 
 Adding the ``-async`` command line flag will run the model with asynchronous rather than synchronous semantics:
 
 ```
-Rscript.exe order.R my-model.json my-mutations.csv -async
+Rscript.exe order.R example_network.json example_mutations.csv -async
 ```
 
 After the script has finished executing, you will find a folder for each row in ``my-mutations.csv``, containing ``.csv`` files for the attractors of the model under every combination of mutations. You will also find ``.png`` and ``.pdf`` images for each row, showing these attractors (and the paths from background to fully mutated cell phenotypes) visually.
