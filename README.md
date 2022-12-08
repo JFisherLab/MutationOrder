@@ -3,7 +3,7 @@
 MutationOrder is a tool to explore how the order in which mutations are acquired in an evolving cancer is constrained by the change in cell phenotypes that these mutations cause. 
 It takes a Qualitative Network (QN) model of the gene regulatory network of a cell, as built in [Bio Model Analyzer](http://biomodelanalyzer.org/) (BMA) and a list of mutations observed in cancer, and returns an analysis of the phenotypes expected at each stage of the acquisition of those mutations, in every possible sequence. 
 
-Details of the methodology can be found in _Using State Space Exploration to Determine How Gene Regulatory Networks Constrain Mutation Order in Cancer Evolution_, in submission.
+Details of the methodology can be found in [Clarke et al., _Automated Reasoning for Systems Biology and Medicine_, 2019](https://doi.org/10.1007/978-3-030-17297-8_5).
 
 ## R scripts
 
