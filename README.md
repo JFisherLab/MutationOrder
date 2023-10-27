@@ -44,7 +44,7 @@ Cancer2| | |1 | |3
 
 ### Running MutationOrder
 
-After installing R and the required libraries, and building BMA you are ready to run the R scripts.
+After installing R and the required libraries, adding Rscript.exe to your path, and building BMA (see [here](https://github.com/hallba/BioModelAnalyzer#build-and-test))*, you are ready to run the R scripts.
 
 Firstly, edit line 1 of ``order.R`` to point to your BMA executable:
 
@@ -65,6 +65,8 @@ Rscript.exe order.R example_network.json example_mutations.csv -async
 ```
 
 After the script has finished executing, you will find a folder for each row in ``example_mutations.csv``, containing ``.csv`` files for the attractors of the model under every combination of mutations. You will also find ``.png`` and ``.pdf`` images for each row, showing these attractors (and the paths from background to fully mutated cell phenotypes) visually.
+
+\* Note that for most applications one can install BMA with one click ([here](http://biomodelanalyzer.org/installer/bma.install.msi)), but to use MutationOrder requires the underlying [ATTRACTOR engine](https://github.com/swoodhouse/attractors), which can only be used after a manual compilation of BMA from source ([here](https://github.com/hallba/BioModelAnalyzer#build-and-test)). 
 
 ## License
 
